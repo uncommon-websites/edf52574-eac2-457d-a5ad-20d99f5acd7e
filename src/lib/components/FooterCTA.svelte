@@ -1,22 +1,20 @@
 <section class="px-6 md:px-12 pb-24 bg-white">
-  <div class="rounded-2xl overflow-hidden relative bg-gradient-to-br from-[#2e2166] to-[#6a8caf] text-white p-8 md:p-16 min-h-[500px] flex flex-col justify-between">
-    <!-- Background overlay/image could go here -->
+  <div class="rounded-2xl overflow-hidden relative bg-black text-white p-8 md:p-16 min-h-[500px] flex flex-col justify-between">
+    <!-- Subtle gradient overlay -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-primary-950/30 via-black to-black"></div>
     
-    <div>
-      <h2 class="text-2xl md:text-3xl font-bold mb-2">Have a project in mind?</h2>
-      <h2 class="text-2xl md:text-3xl font-bold">Let's talk about your tomorrow.</h2>
+    <div class="relative z-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">Ready to experience proximity networking?</h2>
+      <h2 class="text-2xl md:text-3xl font-bold">Join the waitlist for early access.</h2>
     </div>
 
-    <div class="bg-white text-black rounded-xl p-6 md:p-8 max-w-md self-end w-full flex items-center gap-6">
+    <div class="bg-white text-black rounded-xl p-6 md:p-8 max-w-md self-end w-full relative z-10">
       <div class="flex-1">
-        <h3 class="font-bold text-lg">Oliver Söhlke</h3>
-        <p class="text-xs text-gray-500 mb-6">Founder & Managing Director</p>
+        <h3 class="font-bold text-lg mb-2">Starting with College Campuses</h3>
+        <p class="text-xs text-gray-500 mb-6">Be among the first to turn physical proximity into intentional connection. Privacy-first. Offline-capable. No manipulation.</p>
         <button class="bg-black text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wide hover:bg-gray-800 transition-colors">
-          Get in touch
+          Join Waitlist
         </button>
-      </div>
-      <div class="w-24 h-24 rounded-lg overflow-hidden bg-gray-200 shrink-0">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Oliver Söhlke" class="w-full h-full object-cover" />
       </div>
     </div>
   </div>

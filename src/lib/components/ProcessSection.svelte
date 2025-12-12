@@ -4,30 +4,30 @@
   const steps = [
     {
       id: "discover",
-      title: "Discover Novel Opportunities",
-      text: "The right problem is the one worth solving. We quickly uncover actionable opportunities through data and business insights, ensuring that every discovery is grounded in what matters most for your business and your users.",
-      tags: ["Business & Market Research", "Data Driven Insights", "UX Audits", "Customer Journey Mapping", "Brand Perception Analysis", "Technical Assessment"],
+      title: "Discover Nearby Presence",
+      text: "Seven Degrees uses device-level proximity signals (BLE, UWB, sensor fusion) to detect people nearby. You see visual presence only—no names, no bios, no metadata. Just the awareness that someone interesting is close.",
+      tags: ["Bluetooth Low Energy", "Ultra-Wideband", "Sensor Fusion", "Device-Level Processing", "No Location Tracking", "Privacy by Default"],
       graphic: "lines"
     },
     {
-      id: "envision",
-      title: "Envision Innovative Strategies",
-      text: "Great strategies don't just come from ideas—they come from clear, actionable plans. We create pragmatic roadmaps that balance ambition with feasibility, focusing on what will drive immediate and long-term impact for both business and users.",
-      tags: ["CX & Product Strategy", "Vision & Roadmapping", "Value Proposition Design", "Northstar Metric Framework", "Brand Strategy & Positioning", "Technical Solution Design"],
+      id: "signal",
+      title: "Signal Interest Privately",
+      text: "If you're intrigued, signal interest. Your signal is private and encrypted. The other person never knows unless they signal back. No rejection anxiety, no awkward moments, no pressure.",
+      tags: ["Mutual Consent", "Encrypted Signaling", "No One-Sided Reveals", "Psychological Safety", "Zero Coercion", "Dignity Preserved"],
       graphic: "curve"
     },
     {
-      id: "build",
-      title: "Build Engaging Touchpoints",
-      text: "We turn strategy into action—fast and efficiently. Whether designing intuitive interfaces, visual identities, or building scalable platforms, we focus on building holistic experiences that are both joyful and effective.",
-      tags: ["UX & UI Design", "Information Architecture", "App & Web Design", "Design Systems", "Content Strategy", "Agile Software Engineering"],
+      id: "match",
+      title: "Match on Mutual Intent",
+      text: "Only when both people signal interest does the match happen. That's when identities are revealed—names, photos, bios. Nothing meaningful happens without reciprocal intent.",
+      tags: ["Two-Stage Identity", "Mutual Reveal", "Reciprocal Discovery", "Trust-First Design", "No Manipulation", "Intentional Connection"],
       graphic: "circle-top"
     },
     {
-      id: "elevate",
-      title: "Elevate Delivery Capabilities",
-      text: "We make sure teams can deliver better outcomes, faster. By evolving collaborative workflows, upskilling teams, and implementing the right tools, we help you scale with confidence and consistency.",
-      tags: ["AI Consulting", "QA & Delivery", "Process Optimization", "Performance Analytics", "Continuous Improvement", "Change Management"],
+      id: "connect",
+      title: "Connect Safely, Even Offline",
+      text: "Matched? Start messaging immediately. The system works offline through encrypted mesh networking with deferred sync. Meet in real life, plan spontaneously, or just chat. Exit cleanly anytime with cryptographic guarantees.",
+      tags: ["Offline Messaging", "Encrypted Mesh", "Deferred Sync", "Local Message Vaults", "Vaporize Exit", "Real-World Meetings"],
       graphic: "circle-waves"
     }
   ];
@@ -63,7 +63,7 @@
   });
 </script>
 
-<section class="bg-[#1a1a40] text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
+<section class="bg-black text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
   <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12">
     
     <!-- Sticky Navigation -->
@@ -71,7 +71,7 @@
       <div class="space-y-8">
         {#each steps as step, i}
           <div class="transition-opacity duration-500 {i === activeStep ? 'opacity-100' : 'opacity-30'}">
-            <p class="text-xl md:text-2xl font-light mb-1">People work with us to</p>
+            <p class="text-xl md:text-2xl font-light mb-1">How it works</p>
             <h2 class="text-2xl md:text-3xl font-bold">{step.title}</h2>
           </div>
         {/each}
